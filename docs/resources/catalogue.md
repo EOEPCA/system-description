@@ -4,7 +4,7 @@
 > In the first instant, gather relevant information from existing docs/wikis where it exists, and collate here.<br>
 > Use dedicated markdown files to separate the sub-section content if needed.<br>
 > Use diagrams if useful.
-> This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described here https://raw.githubusercontent.com/EOEPCA/eoepca/v1.1/release-notes/release-description/reference-impl.png
+> This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described <a href="https://raw.githubusercontent.com/EOEPCA/eoepca/v1.1/release-notes/release-description/reference-impl.png">here</a>
 
 ## Description
 
