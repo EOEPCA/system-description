@@ -9,8 +9,8 @@
 
 > Description to include:
 > 
-> * role in the architecture
-> * functional capabilities
+> * Role in the architecture
+> * Functional capabilities
 
 ## Interfaces
 
