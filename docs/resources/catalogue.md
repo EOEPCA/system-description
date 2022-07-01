@@ -8,7 +8,7 @@
 
 > The main Use Cases for the Resource Catalogue are described below.<br>
 ![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Cat-Use-Cases.drawio.png "EOEPCA Resource Catalogue Use Cases")
->Use cases are
+> Use cases are
 > * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
 >   * Publish Product. Metadata relating to a product and containing a reference to that product.
 >   * Publish Processing Service. Metadata describing a Processing Service.
@@ -25,8 +25,23 @@
 
 ## Interfaces
 
-> Specification of interfaces provided by the component.<br>
-> Link to external specifications if applicable.
+> Resource Catalogue implements the following interfaces.<br>
+> 
+> Search Interfaces
+> * OGC API Records
+> * STAC (SpatioTemporal Asset Catalog)
+> * OpenSearch
+>   * OGC OpenSearch Geo and Time Extensions
+>   * OGC OpenSearch EO Extensions
+> Search and Publish Interfacess
+> * OGC CSW 3.0.0 and 2.0.2 interfaces
+>   * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
+>   * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
+>   * Federated catalogue distributed searching
+> Metadata Interfacess
+> * Implements ISO Metadata Application Profile 1.0.0
+> * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
+
 
 ## Dependencies
 
