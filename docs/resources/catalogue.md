@@ -41,9 +41,11 @@
 
 ## Dependencies
 
-> Describe links with other eoepca components - e.g. interfaces consumed.
+> The Resource Catalogue is designed to support the ADES component.
 
 ## Additional Information
 
-> Include descriptions of anything that is relevant to help users of the component.<br>
-> Links to other relevant information.
+> Please refer to the latest <a href="https://github.com/EOEPCA/eoepca/tree/develop/release-notes">EOEPCA release notes</a> for more information. 
+> 
+> The Use Cases above were derived from the EOEPCA <a href="https://eoepca.github.io">Use Case Analysis Document</a>.
+
