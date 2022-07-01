@@ -1,0 +1,54 @@
+@startuml iam-deployment-overview
+title User Management Overview
+
+' User Profile
+component "User\nProfile" as profile
+interface "web\n(http)" as profile_web
+profile -up- profile_web
+interface "OIDC\n(Login\nService)" as profile_oidc_required
+profile -down-( profile_oidc_required
+interface "UMA\n(Login\nService)" as profile_uma_required
+profile -down-( profile_uma_required
+
+' PEP
+component "Policy\nEnforcement\nPoint" as pep
+interface "auth_request" as auth_request
+pep -up- auth_request
+interface "Resource API" as resource_api
+pep -up- resource_api
+interface "OIDC\n(Login\nService)" as pep_oidc_required
+pep -down-( pep_oidc_required
+interface "UMA\n(Login\nService)" as pep_uma_required
+pep -down-( pep_uma_required
+interface "???\nPolicy\nAPI\n(PDP)" as pep_policyapi_required
+pep -down-( pep_policyapi_required
+note left
+  ???
+end note
+
+' PDP
+component "Policy\nDecision\nPoint (PDP)" as pdp
+interface "XACML" as xacml
+pdp -up- xacml
+interface "Policy API" as policy_api
+pdp -up- policy_api
+interface "SCIM\n(Login\nService))" as pdp_scim_required
+pdp -down-( pdp_scim_required
+
+' Login Service
+component "Login Service" as ls {
+  component "Identity\n(oxTrust)" as oxtrust
+  component "Authorization\nServer\n(oxAuth)" as oxauth
+}
+interface "web\n(http)" as lsweb
+oxtrust -up- lsweb
+interface "SCIM" as scim
+oxtrust -up- scim
+interface "OIDC" as oidc
+oxauth -up- oidc
+interface "UMA" as uma
+oxauth -up- uma
+interface "XACML\n(PDP)" as login_xacml_required
+oxauth -down-( login_xacml_required
+
+@enduml

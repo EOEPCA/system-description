@@ -16,6 +16,7 @@ nav:
       - resources/data-access.md
       - resources/workspace.md
     - User Management:
+      - iam/iam-overview.md
       - iam/login-service.md
       - iam/pdp.md
       - Policy Enforcement:

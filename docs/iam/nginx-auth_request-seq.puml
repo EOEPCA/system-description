@@ -1,4 +1,4 @@
-@startuml
+@startuml nginx-auth_request-seq
 title Nginx auth_request
 
 hide stereotype
