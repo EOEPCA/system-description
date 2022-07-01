@@ -32,20 +32,17 @@
 
 ## Interfaces
 
-> Resource Catalogue implements the following interfaces.
+> Description to include:
 > 
-> Search Interfaces
 > * OGC API Records
 > * STAC (SpatioTemporal Asset Catalog)
 > * OpenSearch
 > * OGC OpenSearch Geo and Time Extensions
 > * OGC OpenSearch EO Extensions
-> Search and Publish Interfaces
 > * OGC CSW 3.0.0 and 2.0.2 interfaces
 > * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
 > * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
 > * Federated catalogue distributed searching
-> Metadata Interfaces
 > * Implements ISO Metadata Application Profile 1.0.0
 > * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
 
