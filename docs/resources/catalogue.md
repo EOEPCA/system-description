@@ -4,19 +4,11 @@
 > This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described in the <a href="../../system/overview/">System Overview</a>.
 
 
-## Description1
-
-> Description to include:
-> 
-> * role in the architecture
-> * functional capabilities
-
-
 
 ## Description
 
-> Description to include:
-> 
+> The Use Cases for the Resource Catalogue are described below.
+>  
 > * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
 > * Publish Product. Metadata relating to a product and containing a reference to that product.
 > * Publish Processing Service. Metadata describing a Processing Service.
@@ -32,11 +24,8 @@
 
 ## Interfaces
 
-> Description to include:
+> The following interfaces are used by the Resource Catalogue
 > 
-> * Search Interfaces
-> * Search and Publish Interfaces
->   * ABCMetadata Interfaces
 > * OGC API Records
 > * STAC (SpatioTemporal Asset Catalog)
 > * OpenSearch
