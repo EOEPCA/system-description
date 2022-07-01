@@ -11,24 +11,41 @@
 > * role in the architecture
 > * functional capabilities
 
-## Description
+## Description2
 
 > The main Use Cases for the Resource Catalogue are described below.<br>
 ![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Cat-Use-Cases.drawio.png "EOEPCA Resource Catalogue Use Cases")
 > Use cases are
 > * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
->   * Publish Product. Metadata relating to a product and containing a reference to that product.
->   * Publish Processing Service. Metadata describing a Processing Service.
->   * Publish Interactive Application. Metadata describing the needs of an Application.
->   * Publish Collection.  Metadata describing a collection of Metadata.
+> * Publish Product. Metadata relating to a product and containing a reference to that product.
+> * Publish Processing Service. Metadata describing a Processing Service.
+> * Publish Interactive Application. Metadata describing the needs of an Application.
+> * Publish Collection.  Metadata describing a collection of Metadata.
 > * Compliance. Metadata compliance required before it is published. 
 > * Search Metadata.  Find desired Metadata.
->   * Search Temporally. Time based search. 
->   * Search by AOI. Area of Interest based search. 
->   * Search Input for Data Processing. Input required by a process in the ADES.
->   * Search Parameters for Processing. Parameters required to help configure a process in the ADES.
+> * Search Temporally. Time based search. 
+> * Search by AOI. Area of Interest based search. 
+> * Search Input for Data Processing. Input required by a process in the ADES.
+> * Search Parameters for Processing. Parameters required to help configure a process in the ADES.
 > * Authorisation. This may be requites to perform Publish and Search based Use Cases.
 
+
+## Description
+
+> Description to include:
+> 
+> * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
+> * Publish Product. Metadata relating to a product and containing a reference to that product.
+> * Publish Processing Service. Metadata describing a Processing Service.
+> * Publish Interactive Application. Metadata describing the needs of an Application.
+> * Publish Collection.  Metadata describing a collection of Metadata.
+> * Compliance. Metadata compliance required before it is published. 
+> * Search Metadata.  Find desired Metadata.
+> * Search Temporally. Time based search. 
+> * Search by AOI. Area of Interest based search. 
+> * Search Input for Data Processing. Input required by a process in the ADES.
+> * Search Parameters for Processing. Parameters required to help configure a process in the ADES.
+> * Authorisation. This may be requites to perform Publish and Search based Use Cases.
 
 ## Interfaces
 
