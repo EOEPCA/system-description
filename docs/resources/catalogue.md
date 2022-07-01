@@ -31,8 +31,6 @@
 
 ## Description
 
-> The main Use Cases for the Resource Catalogue are described below.
->
 > Use Cases are:
 > * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
 > * Publish Product. Metadata relating to a product and containing a reference to that product.
