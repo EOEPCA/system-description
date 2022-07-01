@@ -32,8 +32,6 @@
 ## Description
 
 > The main Use Cases for the Resource Catalogue are described below.
-> 
-> ![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Cat-Use-Cases.drawio.png "EOEPCA Resource Catalogue Use Cases")
 >
 > Use Cases are:
 > * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
