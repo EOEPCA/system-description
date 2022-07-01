@@ -4,6 +4,13 @@
 > This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described in the <a href="../../system/overview/">System Overview</a>.
 
 
+## Description1
+
+> Description to include:
+> 
+> * role in the architecture
+> * functional capabilities
+
 ## Description
 
 > The main Use Cases for the Resource Catalogue are described below.<br>
