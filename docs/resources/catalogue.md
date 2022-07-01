@@ -15,7 +15,7 @@ This section describes the Resource Catalogue building-block. The relationship o
   * Publish Interactive Application. Metadata describing the needs of an Application.
   * Publish Collection.  Metadata describing a collection of Metadata.
 - Compliance. Metadata compliance required before it is published. 
-- Search Metadata.  Find desired Metadata
+- Search Metadata.  Find desired Metadata.
   * Search Temporally. Time based search. 
   * Search by AOI. Area of Interest based search. 
   * Search Input for Data Processing. Input required by a process in the ADES.
