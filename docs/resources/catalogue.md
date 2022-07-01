@@ -7,7 +7,7 @@
 ## Description
 
 >The main Use Cases for the Resource Catalogue are described below.<br>
-![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Cat-Use-Cases.png "EOEPCA Resource Catalogue Use Cases")
+![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Cat-Use-Cases.drawio.png "EOEPCA Resource Catalogue Use Cases")
 >Use cases are
 >* Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
 >  * Publish Product. Metadata relating to a product and containing a reference to that product.
