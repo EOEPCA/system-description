@@ -36,7 +36,7 @@
 > 
 > * Search Interfaces
 > * Search and Publish Interfaces
->   * Metadata Interfaces
+>   * ABCMetadata Interfaces
 > * OGC API Records
 > * STAC (SpatioTemporal Asset Catalog)
 > * OpenSearch
