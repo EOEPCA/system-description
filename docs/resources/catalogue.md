@@ -11,7 +11,7 @@
 
 ![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Cat-Use-Cases.drawio.png)
 
-> * Publish Metadata.  This Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
+> * Publish Metadata. Metadata can be an input or output for the ADES ( Application Deployment & Execution Service).
 > * Publish Product. Metadata relating to a product and containing a reference to that product.
 > * Publish Processing Service. Metadata describing a Processing Service.
 > * Publish Interactive Application. Metadata describing the needs of an Application.
@@ -26,20 +26,23 @@
 
 ## Interfaces
 
-> The following interfaces are used by the Resource Catalogue
+> The following interfaces are used by the Resource Catalogue.
 > 
-> * OGC API Records
-> * STAC (SpatioTemporal Asset Catalog)
-> * OpenSearch
-> * OGC OpenSearch Geo and Time Extensions
-> * OGC OpenSearch EO Extensions
+> Publishing and Search
 > * OGC CSW 3.0.0 and 2.0.2 interfaces
 > * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
-> * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
+> Search
+> * OpenSearch
+> * OGC API Records
+> * OGC OpenSearch Geo and Time Extensions
+> * OGC OpenSearch EO Extensions
+> * STAC (SpatioTemporal Asset Catalog)
 > * Federated catalogue distributed searching
+> Metadata
 > * Implements ISO Metadata Application Profile 1.0.0
 > * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
-
+> Ingestion
+> * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
 
 ## Dependencies
 
