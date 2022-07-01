@@ -36,9 +36,9 @@
 > 
 > * Search Interfaces
 > * Search and Publish Interfaces
-> * Metadata Interfaces
->   * OGC API Records
->   * STAC (SpatioTemporal Asset Catalog)
+>   * Metadata Interfaces
+> * OGC API Records
+> * STAC (SpatioTemporal Asset Catalog)
 > * OpenSearch
 > * OGC OpenSearch Geo and Time Extensions
 > * OGC OpenSearch EO Extensions
