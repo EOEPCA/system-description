@@ -29,20 +29,20 @@
 > The following interfaces are used by the Resource Catalogue.
 > 
 > * Publishing and Search
-> * OGC CSW 3.0.0 and 2.0.2 interfaces
-> * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
+>     * OGC CSW 3.0.0 and 2.0.2 interfaces
+>     * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
 > * Search
-> * OpenSearch
-> * OGC API Records
-> * OGC OpenSearch Geo and Time Extensions
-> * OGC OpenSearch EO Extensions
-> * STAC (SpatioTemporal Asset Catalog)
-> * Federated catalogue distributed searching
+>     * OpenSearch
+>     * OGC API Records
+>     * OGC OpenSearch Geo and Time Extensions
+>     * OGC OpenSearch EO Extensions
+>     * STAC (SpatioTemporal Asset Catalog)
+>     * Federated catalogue distributed searching
 > * Metadata
-> * Implements ISO Metadata Application Profile 1.0.0
-> * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
+>     * Implements ISO Metadata Application Profile 1.0.0
+>     * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
 > * Ingestion
-> * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
+>     * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
 
 ## Dependencies
 
