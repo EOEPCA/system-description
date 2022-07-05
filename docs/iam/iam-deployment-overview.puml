@@ -7,24 +7,29 @@ interface "web\n(http)" as profile_web
 profile -up- profile_web
 interface "OIDC\n(Login\nService)" as profile_oidc_required
 profile -down-( profile_oidc_required
-interface "UMA\n(Login\nService)" as profile_uma_required
-profile -down-( profile_uma_required
+interface "SCIM\n(Login\nService)" as profile_scim_required
+profile -down-( profile_scim_required
+
+' Resource Guard
+component "Resource Guard" as guard {
+  component "UMA\nUser\nAgent" as agent
+  component "Policy\nEnforcement\nPoint" as pep
+  pep -right0)- agent : auth_request
+}
 
 ' PEP
-component "Policy\nEnforcement\nPoint" as pep
-interface "auth_request" as auth_request
-pep -up- auth_request
 interface "Resource API" as resource_api
 pep -up- resource_api
-interface "OIDC\n(Login\nService)" as pep_oidc_required
-pep -down-( pep_oidc_required
 interface "UMA\n(Login\nService)" as pep_uma_required
 pep -down-( pep_uma_required
-interface "???\nPolicy\nAPI\n(PDP)" as pep_policyapi_required
+interface "Policy\nAPI\n(PDP)" as pep_policyapi_required
 pep -down-( pep_policyapi_required
-note left
-  ???
-end note
+
+' UMA User Agent
+interface "auth_request" as agent_auth_request
+agent -up- agent_auth_request
+interface "UMA\n(Login\nService)" as agent_uma_required
+agent -down-( agent_uma_required
 
 ' PDP
 component "Policy\nDecision\nPoint (PDP)" as pdp

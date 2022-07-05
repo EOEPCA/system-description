@@ -1,4 +1,4 @@
-# PDP - Policy Decision Point [TODO]
+# PDP - Policy Decision Point
 
 > The purpose of this section is to identify the building-block, its role in the architecture, and its relationship to the other building-blocks expressed through the interfaces it provides and consumes. The idea is to provide a singular entrypoint to the EOEPCA building-blocks.<br>
 > In the first instant, gather relevant information from existing docs/wikis where it exists, and collate here.<br>
@@ -16,6 +16,17 @@
 
 > Specification of interfaces provided by the component.<br>
 > Link to external specifications if applicable.
+
+### Policy API
+
+TODO
+
+### eXtensible Access Control Markup Language (XACML)
+
+* XACML REST Profile<br>
+  [http://docs.oasis-open.org/xacml/xacml-rest/v1.1/xacml-rest-v1.1.html](http://docs.oasis-open.org/xacml/xacml-rest/v1.1/xacml-rest-v1.1.html)
+* XACML JSON Profile<br>
+  [http://docs.oasis-open.org/xacml/xacml-json-http/v1.1/xacml-json-http-v1.1.html](http://docs.oasis-open.org/xacml/xacml-json-http/v1.1/xacml-json-http-v1.1.html)
 
 ## Dependencies
 
