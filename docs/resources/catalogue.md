@@ -46,7 +46,7 @@
 
 ## Dependencies
 
-> The Resource Catalogue is designed to support the ADES component.
+> The Resource Catalogue is designed to support the ADES component. It can also be used directly if needed.
 
 ## Additional Information
 
