@@ -4,7 +4,6 @@
 > This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described in the <a href="../../system/overview/">System Overview</a>.
 
 
-
 ## Description
 
 > The Use Cases for the Workspace are described below.
@@ -16,6 +15,13 @@
 > * Select Resources.
 > * Delete Resources.
 > * Visualise Resources.
+
+
+## Overeview
+
+> The high level design is described below.
+
+![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Workspace-Deployment-Diagram.drawio.png)
 
 
 ## Interfaces
