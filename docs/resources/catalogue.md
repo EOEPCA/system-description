@@ -4,13 +4,6 @@
 > This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described in the <a href="../../system/overview/">System Overview</a>.
 
 
-## Overeview
-
-> The high level design is described below.
-
-![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Catalog-Deployment-Diagram.drawio.png)
-
-
 ## Description
 
 > The Use Cases for the Resource Catalogue are described below.
@@ -29,6 +22,14 @@
 > * Search Input for Data Processing. Input required by a process in the ADES.
 > * Search Parameters for Processing. Parameters required to help configure a process in the ADES.
 > * Authorisation. This may be requites to perform Publish and Search based Use Cases.
+
+
+## Overview
+
+> The high level design is described below.
+
+![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Catalog-Deployment-Diagram.drawio.png)
+
 
 ## Interfaces
 
