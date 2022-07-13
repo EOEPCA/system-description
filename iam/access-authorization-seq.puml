@@ -1,0 +1,53 @@
+@startuml access-authorization-seq
+title Access Authorization
+
+!pragma teoz true
+
+participant "Client\ne.g.\nbrowser" as client
+participant "Nginx\nIngress" as nginx
+participant "Resource\nServer\ne.g. ADES" as resource
+
+box "Resource Guard"
+participant "UMA\nUser\nAgent" as agent
+box PEP
+participant "auth_request\nEndpoint\n:5566\n<b>/authorize</b>" as pep_auth
+' participant "Resources API\n:5576" as pep_resources
+end box
+end box
+box "Login Service"
+box UMA
+participant "Permission\nEndpoint\n<b>/host/rsrc_pr</b>" as uma_permission
+participant "Token\nEndpoint\n<b>/token</b>" as uma_token
+participant "Introspection\nEndpoint\n<b>/rpt/status</b>" as uma_introspection
+end box
+participant "SCIM Endpoint\n<b>/identity/restv1/scim/v2</b>" as scim
+' participant "OIDC Endpoint" as oidc
+end box
+box PDP
+' participant "Policy API" as policy
+participant "XACML\nEndpoint\n<b>/policy/validate</b>" as xacml
+end box
+
+client -> nginx : access\nresource
+nginx -> agent : auth_request [no RPT]\n(URI,method,user-id)
+agent -> pep_auth : auth_request [no RPT]\n(URI,method,user-id)
+pep_auth -> pep_auth : mongo lookup
+pep_auth -> uma_permission : Request Permission\n(resource-id,scopes)
+uma_permission -> pep_auth : 401 (ticket)
+pep_auth -> agent : 401 (ticket)
+agent -> uma_token : Request RPT (user-id,ticket)
+uma_token -> xacml : Check Policy\n(user-id,resource-id,scopes)
+xacml -> scim : retrieve user attributes\n(e.g. isOperator)
+scim -> xacml : user attributes
+xacml -> xacml : check rules DB
+xacml -> uma_token : authorization decision\n(200 OK)
+uma_token -> agent : RPT
+agent -> pep_auth : auth_request\n(URI,method,user-id,RPT)
+pep_auth -> uma_introspection : Check RPT
+uma_introspection -> pep_auth : 200 (resource-id,scopes,claims)
+pep_auth -> agent : 200 Authorized
+agent -> nginx : 200 Authorized
+nginx -> resource : proxy\nclient\nrequest
+resource -> client : resource
+
+@enduml
