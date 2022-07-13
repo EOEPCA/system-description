@@ -14,6 +14,13 @@
 > * Get Data 
 
 
+## Overeview
+
+> The high level design is described below.
+
+![EOEPCA Resource Catalogue Use Cases](../../img/resources/EOEPCA-Resource-Data-Access-Deployment-Diagram.drawio.png)
+
+
 ## Interfaces
 
 > The following interfaces are used by Data Access.
