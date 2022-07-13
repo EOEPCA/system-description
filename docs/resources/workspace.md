@@ -34,7 +34,7 @@
 >     * PATCH /workspaces/  (Update Resources)
 >     * DELETE /workspaces/  (Delete Resources)
 >
-> * Visualise
+> * Visualise ???????
 >     * OGC WMS 1.1 - 1.3 interfaces
 >     * OGC WMTS 1.0 interfaces with automatic caching
 >     * OGC WCS 2.0 interfaces with EO Application Profile
