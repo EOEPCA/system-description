@@ -59,9 +59,9 @@ The Resource Catalogue provides the following interfaces for ingestion of metada
   Command-line tool `pycsw-admin.py` will import (`load-records`) records from XML files in the filesystem.
 * **OGC CSW Transactions**<br>
   pycsw supports OGC CSW Transactions for `Insert`, `Update` and `Delete`...
-  * Insert: full XML documents can be inserted as per CSW-T
-  * Update: updates can be made as full record updates or record properties against a csw:Constraint
-  * Delete: deletes can be made against a csw:Constraint
+    * Insert: full XML documents can be inserted as per CSW-T
+    * Update: updates can be made as full record updates or record properties against a csw:Constraint
+    * Delete: deletes can be made against a csw:Constraint
 
 > TODO: provide some examples for loading records
 
