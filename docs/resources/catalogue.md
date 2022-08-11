@@ -33,23 +33,37 @@
 
 ## Interfaces
 
-> The following interfaces are used by the Resource Catalogue.
-> 
-> * Publishing and Search
->     * OGC CSW 3.0.0 and 2.0.2 interfaces
->     * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
-> * Search
->     * OpenSearch
->     * OGC API Records
->     * OGC OpenSearch Geo and Time Extensions
->     * OGC OpenSearch EO Extensions
->     * STAC (SpatioTemporal Asset Catalog)
->     * Federated catalogue distributed searching
-> * Metadata
->     * Implements ISO Metadata Application Profile 1.0.0
->     * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
-> * Ingestion
->     * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
+The following interfaces are provided by the Resource Catalogue.
+
+* Publishing and Search
+    * OGC CSW 3.0.0 and 2.0.2 interfaces
+    * Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0
+* Search
+    * OGC OpenSearch with EO, Geo and Time Extensions
+    * OGC API Records
+    * STAC (SpatioTemporal Asset Catalog)
+    * Federated catalogue distributed searching
+* Metadata
+    * Implements ISO Metadata Application Profile 1.0.0
+    * Support for ISO-19115-1 and ISO-19115-2  (Geographic information)
+* Ingestion
+    * Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
+
+### Ingestion Interfaces
+
+The Resource Catalogue provides the following interfaces for ingestion of metadata records:
+
+* **pycsw Python API**<br>
+  Python library with classes for interfacing with pycsw instance - for example to `insert()` records.
+* **pycsw CLI**<br>
+  Command-line tool `pycsw-admin.py` will import (`load-records`) records from XML files in the filesystem.
+* **OGC CSW Transactions**<br>
+  pycsw supports OGC CSW Transactions for `Insert`, `Update` and `Delete`...
+  * Insert: full XML documents can be inserted as per CSW-T
+  * Update: updates can be made as full record updates or record properties against a csw:Constraint
+  * Delete: deletes can be made against a csw:Constraint
+
+> TODO: provide some examples for loading records
 
 ## Dependencies
 
