@@ -1,5 +1,7 @@
 # Resource Catalogue [TODO]
 
+==[To be completed by EOX/EOfarm]==
+
 > The purpose of this section is to identify the building-block, its role in the architecture, and its relationship to the other building-blocks expressed through the interfaces it provides and consumes. The idea is to provide a singular entrypoint to the EOEPCA building-blocks.<br><br>
 > This section describes the Resource Catalogue building-block. The relationship of the Resource Catalogue to other components is described in the <a href="../../system/overview/">System Overview</a>.
 
