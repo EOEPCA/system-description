@@ -23,12 +23,31 @@
 
 ## Interfaces
 
-> The following interfaces are used by Data Access.
-> 
-> * Get Data
->     * OGC WMS 1.1 - 1.3 interfaces
->     * OGC WMTS 1.0 interfaces with automatic caching
->     * OGC WCS 2.0 interfaces with EO Application Profile
+The following interfaces are provided by Data Access.
+
+* Get Data
+    * OGC WMS 1.1 - 1.3 interfaces
+    * OGC WMTS 1.0 interfaces with automatic caching
+    * OGC WCS 2.0 interfaces with EO Application Profile
+
+### Harvesting
+
+The Data Access harvester supports following back-ends from which to harvest:
+
+* OpenSearch
+* File-based<br>
+  > TODO - what is meant by file-based - STAC Catalog?
+
+The harvester supports post-processors to adapt/enrich the harvested metadata before it is registered...
+
+* **CREODIASOpenSearchSentinel2Postprocessor**<br>
+  Sentinel-2 metadata from the CREODIAS catalogue.
+
+Other post-processors can be plugged-in through configuration of the harvester component.
+
+### Registration
+
+Data can be directly registered with the Data Access component by pushing a STAC item to the `register_queue` of the data-access `redis` service. During registration, the Data Access component also [ingests the metadata record to the Resource Catalogue](catalogue.md#ingestion-interfaces), uisng the pycsw python API.
 
 ## Dependencies
 
