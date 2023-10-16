@@ -1,0 +1,32 @@
+@startuml resource-creation
+title Resource Creation
+
+!pragma teoz true
+
+participant "Resource\nServer" as rs
+
+box "Resource Guard"
+box PEP
+participant "Resources API\n:5576\n/resources" as pep_resources
+end box
+end box
+
+box "Login Service"
+box UMA
+participant "Registration\nEndpoint\n/host/rsrc/resource_set" as uma_registration
+end box
+end box
+
+box PDP
+participant "Policy API\n/policy" as policy
+end box
+
+rs -> pep_resources : Create resource\n(name,path,scopes)
+pep_resources -> uma_registration : Create resource\n(resource-path,scopes)
+uma_registration -> pep_resources : resource id
+pep_resources -> pep_resources : add to mongo
+pep_resources -> policy : Create policy(s)\n(resource-id)
+policy -> pep_resources : 200 OK
+pep_resources -> rs : 200 OK
+
+@enduml
