@@ -57,25 +57,30 @@ theme:
     - content.code.copy
 
 markdown_extensions:
-  - tables
-  - toc:
-      permalink: ⚓︎
-      toc_depth: 4
-  - smarty
-  - sane_lists
+  - abbr
   - admonition
+  - attr_list
+  - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - abbr
-  - attr_list
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - sane_lists
+  - smarty
+  - tables
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 4
 
 extra:
   version:

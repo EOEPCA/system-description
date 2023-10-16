@@ -1,4 +1,6 @@
-# ADES - Application Deployment & Execution Service [TODO]
+# ADES [TODO]
+
+==[To be completed by Terradue]==
 
 > The purpose of this section is to identify the building-block, its role in the architecture, and its relationship to the other building-blocks expressed through the interfaces it provides and consumes. The idea is to provide a singular entrypoint to the EOEPCA building-blocks.<br>
 > In the first instant, gather relevant information from existing docs/wikis where it exists, and collate here.<br>
