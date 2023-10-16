@@ -1,11 +1,11 @@
-# PDE - Processor Development Environment
+# Application Hub
 
 > The purpose of this section is to identify the building-block, its role in the architecture, and its relationship to the other building-blocks expressed through the interfaces it provides and consumes. The idea is to provide a singular entrypoint to the EOEPCA building-blocks.<br>
 > In the first instant, gather relevant information from existing docs/wikis where it exists, and collate here.<br>
 > Use dedicated markdown files to separate the sub-section content if needed.<br>
 > Use diagrams where useful.
 
-The Processor Development Environment (PDE) provides integrated web tooling to perform interactive analysis and to develop, test and package apps for ADES execution. It provides an environment that seeks to replicate the conditions an application experiences when running in the ADES on a platform.
+The Application Hub provides integrated web tooling to perform interactive analysis, to develop, test & package apps for ADES execution, and to provide a user-extensible capability for interactive dashboards. This includes a web IDE (Code Server) that provides an environment that seeks to replicate the conditions an application experiences when running in the ADES on a platform.
 
 ## Description
 
@@ -13,6 +13,8 @@ The Processor Development Environment (PDE) provides integrated web tooling to p
 > 
 > * role in the architecture
 > * functional capabilities
+
+==THE CONTENT BELOW WAS WRITTEN FOR THE PDE AND NEEDS TO BE REPLACED BY A DESCRIPTION OF THE APPLICATION HUB. IT IS LEFT HERE IN CASE IT ACTS AS A USEFUL STARTING POINT...==
 
 The PDE comprises two main parts:
 
