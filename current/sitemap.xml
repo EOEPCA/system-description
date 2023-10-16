@@ -41,6 +41,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://system-description.docs.eoepca.org/current/processing/AP-validator/</loc>
+         <lastmod>2023-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://system-description.docs.eoepca.org/current/processing/ades/</loc>
          <lastmod>2023-10-16</lastmod>
          <changefreq>daily</changefreq>
