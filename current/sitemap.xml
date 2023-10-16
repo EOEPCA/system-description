@@ -66,6 +66,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://system-description.docs.eoepca.org/current/resources/registration-api/</loc>
+         <lastmod>2023-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://system-description.docs.eoepca.org/current/resources/workspace/</loc>
          <lastmod>2023-10-16</lastmod>
          <changefreq>daily</changefreq>
