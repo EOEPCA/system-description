@@ -12,6 +12,7 @@ nav:
     - Processing:
       - processing/ades.md
       - processing/application-hub.md
+      - processing/AP-validator.md
     - Resources:
       - resources/catalogue.md
       - resources/data-access.md
