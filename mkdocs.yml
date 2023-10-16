@@ -16,6 +16,7 @@ nav:
     - Resources:
       - resources/catalogue.md
       - resources/data-access.md
+      - resources/registration-api.md
       - resources/workspace.md
     - User Management:
       - iam/iam-overview.md
