@@ -3,6 +3,7 @@ site_url: https://system-description.docs.eoepca.org
 repo_url: https://github.com/EOEPCA/system-description
 edit_uri: ""
 
+# Site navigation
 nav:
   - System Description:
     - index.md
@@ -10,7 +11,7 @@ nav:
       - system/overview.md
     - Processing:
       - processing/ades.md
-      - processing/pde.md
+      - processing/application-hub.md
     - Resources:
       - resources/catalogue.md
       - resources/data-access.md
@@ -31,6 +32,7 @@ theme:
   name: material # https://squidfunk.github.io/mkdocs-material/creating-your-site/
   # locale: en
   # custom_dir: my_theme_customizations/
+  custom_dir: overrides
   # static_templates:
   #   - sitemap.html
   # include_sidebar: false
@@ -52,6 +54,7 @@ theme:
     # - navigation.expand
     - toc.integrate
     - navigation.top
+    - content.code.copy
 
 markdown_extensions:
   - tables
@@ -60,6 +63,23 @@ markdown_extensions:
       toc_depth: 4
   - smarty
   - sane_lists
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+extra:
+  version:
+    provider: mike
 
 # docs_dir: docs
 # site_dir: site
