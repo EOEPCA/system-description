@@ -9,15 +9,25 @@ onExit() {
 }
 trap onExit EXIT
 
+# Commands to execute in the container
+command() {
+  cat - <<EOF
+git config --global --add safe.directory /docs
+git config --global user.name "$(git config --get user.name)"
+git config --global user.email "$(git config --get user.email)"
+mike $@
+EOF
+}
+
 # run mike
-docker run --name mike --rm -it \
+command "$@" | docker run --name mike --rm -i \
   -v ${PWD}:/docs \
   -v ${HOME}/.ssh:/root/.ssh \
   -v ${SSH_AUTH_SOCK}:/ssh-agent \
   -e SSH_AUTH_SOCK=/ssh-agent \
-  --entrypoint=mike \
+  --entrypoint="sh" \
   eoepca/mkdocs-material \
-  "$@"
+  -
 
 # clean-up
 sudo rm -rf site
