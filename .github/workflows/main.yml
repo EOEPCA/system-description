@@ -30,4 +30,4 @@ jobs:
       - name: Publish version
         run: |
           mike deploy --push current latest
-          mike set-default current
+          mike set-default --push current
