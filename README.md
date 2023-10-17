@@ -42,6 +42,12 @@ Publish to `current` version, and update the `latest` alias to point to this...
 ./publish current latest
 ```
 
+Set `current` as the default...
+
+```bash
+./mike set-default --push current
+```
+
 Publish to `v1.x` version...
 
 ```bash

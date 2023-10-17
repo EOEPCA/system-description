@@ -29,5 +29,5 @@ jobs:
           git fetch origin gh-pages --depth=1
       - name: Publish version
         run: |
-          mike deploy --push current latest
+          mike deploy --push --update-aliases current latest
           mike set-default --push current
