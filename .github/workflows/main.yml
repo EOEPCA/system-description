@@ -6,6 +6,7 @@ on:
     paths:
       - mkdocs.yml
       - "docs/**"
+      - "includes/**"
       - "overrides/**"
 
   # Allows you to run this workflow manually from the Actions tab
@@ -27,4 +28,6 @@ jobs:
           git config --global user.email "ci@eoepca.org"
           git fetch origin gh-pages --depth=1
       - name: Publish version
-        run: mike deploy --push current
+        run: |
+          mike deploy --push current latest
+          mike set-default current
