@@ -31,7 +31,7 @@ The ADES follows specific standards for its deployment and execution interfaces 
 
 ## Dependencies
 
-The ADES can interact with other EOEPCA building block but has no dependencies 
+The ADES can interact with other EOEPCA building blocks but has no dependencies 
 
 ## Additional Information
 
